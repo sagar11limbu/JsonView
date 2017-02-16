@@ -1,6 +1,7 @@
 package com.infodev.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonView;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
@@ -15,16 +16,14 @@ import java.io.Serializable;
 
 @Entity
 @Table
-public class Trading_Data implements Serializable {
-
+@JsonInclude(JsonInclude.Include.NON_EMPTY)
+public class Trading_Data  {
     @Id
     @Column
-    @JsonView(View.Summary.class)
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
     @Column
-    @JsonView(View.Summary.class)
     private String stockCode;
 
     @Column

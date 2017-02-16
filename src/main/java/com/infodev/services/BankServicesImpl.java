@@ -3,7 +3,7 @@ package com.infodev.services;
 import com.infodev.dao.BankDao;
 import com.infodev.entities.Trading_Data;
 import com.infodev.models.OhlcRequest;
-import com.infodev.models.OhlcResponseMapping;
+import com.infodev.models.OhlcResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

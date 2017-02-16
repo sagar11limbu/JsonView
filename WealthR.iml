@@ -38,6 +38,13 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:4.2.9.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-core:4.2.9.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:4.2.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.8.0" level="project" />
+    <orderEntry type="library" name="Maven: net.sf.dozer:dozer:5.5.1" level="project" />
+    <orderEntry type="library" name="Maven: commons-beanutils:commons-beanutils:1.9.1" level="project" />
+    <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.2.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.2.1" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.13" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.13" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:4.2.9.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-web:4.2.9.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:4.2.9.RELEASE" level="project" />
@@ -80,7 +87,6 @@
     <orderEntry type="library" name="Maven: org.apache.tiles:tiles-request-jsp:1.0.3" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tiles:tiles-core:3.0.3" level="project" />
     <orderEntry type="library" name="Maven: commons-digester:commons-digester:2.0" level="project" />
-    <orderEntry type="library" name="Maven: commons-beanutils:commons-beanutils:1.8.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tiles:tiles-api:3.0.3" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tiles:tiles-request-api:1.0.3" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tiles:tiles-servlet:3.0.3" level="project" />
@@ -102,8 +108,6 @@
     <orderEntry type="library" name="Maven: com.sun.xml.bind:jaxb-impl:2.2.3-1" level="project" />
     <orderEntry type="library" name="Maven: javax.xml.bind:jaxb-api:2.2.2" level="project" />
     <orderEntry type="library" name="Maven: javax.xml.stream:stax-api:1.0-2" level="project" />
-    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.2" level="project" />
-    <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.2" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-jaxrs:1.9.2" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-xc:1.9.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.3.6" level="project" />
@@ -112,11 +116,9 @@
     <orderEntry type="library" name="Maven: com.microsoft.azure:adal4j:1.0.0" level="project" />
     <orderEntry type="library" name="Maven: com.nimbusds:oauth2-oidc-sdk:4.5" level="project" />
     <orderEntry type="library" name="Maven: net.jcip:jcip-annotations:1.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.commons:commons-lang3:3.3.1" level="project" />
     <orderEntry type="library" name="Maven: net.minidev:json-smart:1.1.1" level="project" />
     <orderEntry type="library" name="Maven: com.nimbusds:lang-tag:1.4" level="project" />
     <orderEntry type="library" name="Maven: com.nimbusds:nimbus-jose-jwt:3.1.2" level="project" />
     <orderEntry type="library" name="Maven: org.bouncycastle:bcprov-jdk15on:1.51" level="project" />
-    <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.2.4" level="project" />
   </component>
 </module>

@@ -2,11 +2,10 @@ package com.infodev.dao;
 
 import com.infodev.entities.Trading_Data;
 import com.infodev.models.OhlcRequest;
-import com.infodev.models.OhlcResponseMapping;
-import org.hibernate.Query;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
+import com.infodev.models.OhlcResponse;
+import org.hibernate.*;
+import org.hibernate.criterion.Projections;
+import org.hibernate.transform.Transformers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -31,11 +30,18 @@ public class BankDaoImpl implements BankDao{
     public List<Trading_Data> getOhlc(OhlcRequest ohlcRequest){
         sessionFactory.openSession();
         session=sessionFactory.openSession();
-        Query query=session.createQuery(" from Trading_Data t where t.stockCode=:stockCode");
+//        Criteria cr = session.createCriteria(Trading_Data.class)
+//                .setProjection(Projections.projectionList()
+//                        .add(Projections.property("minPrice"), "minPrice")
+//                        .add(Projections.property("maxPrice"), "maxPrice")
+//                        .add(Projections.property("closingPrice"), "closingPrice")
+//                        .add(Projections.property("prevClosing"), "prevClosing"))
+//                .setResultTransformer(Transformers.aliasToBean(Trading_Data.class));
+//
+//        List<Trading_Data> list = cr.list();
+        Query query = session.createQuery("from Trading_Data t where t.stockCode=:stockCode");
         query.setParameter("stockCode",ohlcRequest.getStockCode());
-        System.out.println(query);
-        List list=query.list();
-        session.close();
+        List list = query.list();
         return list;
 
     }

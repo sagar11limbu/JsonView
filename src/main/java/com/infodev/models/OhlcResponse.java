@@ -1,23 +1,51 @@
 package com.infodev.models;
 
-import com.infodev.entities.Trading_Data;
 
-import java.util.List;
+import java.io.Serializable;
 
 /**
- * Created by reddevil on 2/12/2017.
+ * Created by reddevil on 2/15/2017.
  */
-public class OhlcResponse {
+public class OhlcResponse implements Serializable{
+    private static final long serialVersionUID = 1L;
 
-        List<OhlcResponseMapping> ohlcResponses;
+    private long maxPrice;
 
-        public List<OhlcResponseMapping> getOhlcResponses() {
-            return ohlcResponses;
-        }
+    private long minPrice;
 
-        public void setOhlcResponses(List<OhlcResponseMapping> ohlcResponses) {
-            this.ohlcResponses = ohlcResponses;
-        }
+    private long closingPrice;
 
+    private long prevClosing;
 
+    public long getMaxPrice() {
+        return maxPrice;
+    }
+
+    public void setMaxPrice(long maxPrice) {
+        this.maxPrice = maxPrice;
+    }
+
+    public long getMinPrice() {
+        return minPrice;
+    }
+
+    public void setMinPrice(long minPrice) {
+        this.minPrice = minPrice;
+    }
+
+    public long getClosingPrice() {
+        return closingPrice;
+    }
+
+    public void setClosingPrice(long closingPrice) {
+        this.closingPrice = closingPrice;
+    }
+
+    public long getPrevClosing() {
+        return prevClosing;
+    }
+
+    public void setPrevClosing(long prevClosing) {
+        this.prevClosing = prevClosing;
+    }
 }
